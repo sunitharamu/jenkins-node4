@@ -10,7 +10,7 @@ pipeline {
                 cleanWs()
                 }
         }
-
+   }
         stage("Checkout from SCM"){
                 steps {
                     git branch: 'main', credentialsId: 'github', url: 'https://github.com/sunitharamu/jenkins-node4.git'
@@ -40,5 +40,4 @@ pipeline {
 	           }	
            }
  }
-   }
-}
+   
